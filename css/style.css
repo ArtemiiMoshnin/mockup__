@@ -1,0 +1,181 @@
+  .header {
+}
+
+.header__container {
+    max-width: 320px;
+    background-color: #FFFFFF;
+    display: flex;
+    /* Почему верстка ломается без этого flex?
+    Я обязан задавать это свойство также родилю, не могу
+    задать только дочерним элементам? */
+}
+
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18.59px 0;
+    
+    /* Почему это значение center тут, а не выше у container?
+    Оно задается только дочерним элементам и потомкам? */
+    width: 100%;
+    /* Я думал, что при width 100%, если я задам отступы,
+    блок выпадет из родителя. Но почему-то это не происходит */
+
+}
+
+
+.header__burger {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background: none; 
+    border: none;
+    
+}
+.header__burger-img {
+}
+.header__cps {
+    width: 96.55px;
+    height: 50.81px;
+    /* Почему-то без этих абсолюных величин контейнер занимает больше
+    места чем содержимое. Я попробовал поиграть с width и
+    box-sizing, но не помогло */
+}
+.header__cps-img {
+}
+
+
+.header__divider {
+    height: 32px;
+    border-right: 2px solid #EAEAEA;
+    border-radius: 1px;
+}
+.header__repair {
+    width: 40px;
+    height: 40px;
+    /* Почему то этот контейнер вместо ширины картинки 40 на 40, был 40 на 44.
+    Поэтому мне пришлось их так везде переопределить. Почему так произошло? */
+}
+.header__repair-img {
+}
+.header__checkstatus {
+    width: 40px;
+    height: 40px;
+}
+.header__checkstatus-img {
+}
+
+
+.main {
+}
+
+.main__container {
+    width: 320px;
+    background-color: #F8F8F8;
+}
+
+
+.main__title {
+    margin: 0 0 24px 0;
+    padding-top: 24px; 
+    display: flex; 
+    white-space: nowrap; /* хотел через flex-wrap,
+    но не получилось почему-то */
+    align-items: center;
+    
+}
+.title {
+    font-size: 28px;
+    font-family: TT Lakes;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+
+}
+
+.main__highlight {
+    height: 40px;
+    border-right: 4px solid #41F6D7;
+    border-radius: 0 1px 1px 0;
+    order: -1;
+    margin-right: 12px;
+    
+}
+
+.main__slide-menu {
+display: flex;
+padding: 0;
+white-space: nowrap;
+list-style-type: none;
+margin: 0 0 0 15px;
+overflow: hidden;
+
+}
+
+.slide-menu { 
+    
+}
+
+.slide-menu__item {
+    padding: 8px 16.54px 8px 16.54px;
+    /* В макете паддинг другой (с правой стороны), но иначе ровно у меня не получалось */
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+   
+   
+}
+
+.slide-menu__item--autofocus { 
+    border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+
+.slide-menu__link{
+    text-decoration: none;
+    color: #7E7E82;
+}
+
+
+.main__block-one {
+    
+}
+.main__about {
+    margin: 24px 16px 16px 16px;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+.main__read-more {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 16px 16px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    
+}
+
+.main__read-more-img {
+    margin-right: 8px;
+    order: -1;
+    
+}
+.main__cps-img {
+    margin-bottom: 35px;
+}
+
+    
+    
+    

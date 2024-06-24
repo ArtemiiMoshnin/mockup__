@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mockup</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav"> <!--Я долго думал, нужно ли делать просто класс nav (а потом ниже nav__burger и т.д) или header__nav -->
+                <button type="menu" class="header__burger"> <!--Тег button и ее тип тут подходят? -->
+                    <img class="header__burger-img" src="images/burger.svg" alt="Меню">
+                </button>
+                <a class="header__cps">
+                    <img class="header__cps-img" src="images/cps.svg" alt="Логотип">
+                </a>
+                <div class="header__divider"></div>
+                <a href="#" class="header__repair">
+                    <img class="header__repair-img" src="images/repari.svg" alt="Оставить заявку">
+                </a>
+                <a href="#" class="header__checkstatus">
+                    <img class="header__checkstatus-img" src="images/checkstatus.svg" alt="Статус ремонта">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+            <div class="main__container">
+            <h1 class="main__title title">Услуги и сервисы
+                <div class="main__highlight"></div>
+            </h1>
+            <ul class="main__slide-menu slide-menu">
+                <li class="slide-menu__item slide-menu__item--autofocus">
+                    <a href="#" class="slide-menu__link">Ремонтируемые устройства</a></li>
+                <li class="slide-menu__item">
+                    <a href="#" class="slide-menu__link">Ремонтируемые бренды</a></li>
+                <li class="slide-menu__item">
+                    <a href="#" class="slide-menu__link">Цены на услуги</a></li>
+                <li class="slide-menu__item">
+                    <a href="#" class="slide-menu__link">Адреса сервисных </a></li>
+                <li class="slide-menu__item">
+                    <a href="#" class="slide-menu__link">Специальные цены</a></li>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Отзывы</a></li>
+            </ul>    
+            <div class="main__block-one">
+            <p class="main__about">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <button type="button" class="main__read-more"> Читать далее
+                    <img class="main__read-more-img" src="images/more.svg" alt="Читать далее">
+                </button>
+                <img class="main__cps-img" src="images/picture.jpg" alt="CPS">
+            </div>
+    </main>
+</body>
+</html>
