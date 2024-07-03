@@ -1,51 +1,40 @@
-  .header {
-}
 
 .header__container {
-    max-width: 320px;
+    
+    max-width: 100%;
+    max-height: 100%;
     background-color: #FFFFFF;
-    display: flex;
     
 }
-
 
 .header__nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 18.59px 0;
-    
-    /* Почему это значение center тут, а не выше у container?
-    Оно задается только дочерним элементам и потомкам? */
-    width: 100%;
-    /* Я думал, что при width 100%, если я задам отступы,
-    блок выпадет из родителя. Но почему-то это не происходит */
-
+    margin: 0 5%;
 }
 
 
 .header__burger {
+    align-self: center;
     width: 40px;
     height: 40px;
     padding: 0;
-    margin: 0;
     background: none; 
-    border: none;
-    
+    border: none; 
 }
-.header__burger-img {
-}
+
+
 .header__cps {
     width: 96.55px;
     height: 50.81px;
-    /* Почему-то без этих абсолюных величин контейнер занимает больше
-    места чем содержимое. Я попробовал поиграть с width и
-    box-sizing, но не помогло */
-}
-.header__cps-img {
+    padding: 18.59px 0;   
 }
 
+.header__divider-laptop {
+    display: none;
+    
+}
 
 .header__divider {
     height: 32px;
@@ -55,37 +44,60 @@
 .header__repair {
     width: 40px;
     height: 40px;
-    /* Почему то этот контейнер вместо ширины картинки 40 на 40, был 40 на 44.
-    Поэтому мне пришлось их так везде переопределить. Почему так произошло? */
+    margin: 0;
+    padding: 0;
 }
-.header__repair-img {
-}
+
+
 .header__checkstatus {
     width: 40px;
-    height: 40px;
-}
-.header__checkstatus-img {
+    height: 40px;   
+    margin: 0;
+    padding: 0;
 }
 
 
-.main {
-}
+.header__call {display: none;
+    width: 40px;
+    height: 40px;}
+
+.header__chat {display: none;
+    width: 40px;
+    height: 40px;}
+
+.header__profile {display: none;
+    width: 40px;
+    height: 40px;}
+
+
+
+
+
+    
+
+
+
+
 
 .main__container {
-    width: 320px;
+    max-width: 100%;
     background-color: #F8F8F8;
 }
 
 
-.main__title {
-    margin: 0 0 24px 0;
-    padding-top: 24px; 
-    display: flex; 
-    white-space: nowrap; /* хотел через flex-wrap,
-    но не получилось почему-то */
-    align-items: center;
-    
+.main__titile-container {
+    display: flex;
 }
+
+.main__container-text-highlight {
+    display: flex;
+    justify-content: flex-start;
+    margin: 24px 0 24px 0;
+   
+}
+
+.main__title {margin: 0;}
+    
 .title {
     font-size: 28px;
     font-family: TT Lakes;
@@ -97,33 +109,43 @@
 .main__highlight {
     height: 40px;
     border-right: 4px solid #41F6D7;
-    border-radius: 0 1px 1px 0;
-    order: -1;
+    border-radius: 0 5px 5px 0;
     margin-right: 12px;
     
 }
 
-.main__slide-menu {
-display: flex;
-padding: 0;
-white-space: nowrap;
-list-style-type: none;
-margin: 0 0 0 15px;
-overflow: hidden;
+.main__container-links {display: none;}
 
-}
 
-.slide-menu { 
+.main__slide-container {
     
+    margin-left: 5%;
+    margin-bottom: 24px;
+    max-width: 100%;
+    height: 40px;
 }
+
+
+
+.main__slide-menu {
+  display: flex;
+  padding: 0;
+  white-space: nowrap;
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+
+}
+
+
 
 .slide-menu__item {
-    padding: 8px 16.54px 8px 16.54px;
-    /* В макете паддинг другой (с правой стороны), но иначе ровно у меня не получалось */
+    padding: 8px 16.54px;
     font-family: TT Lakes;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+    
    
    
 }
@@ -136,25 +158,60 @@ overflow: hidden;
 
 
 .slide-menu__link{
+   
     text-decoration: none;
     color: #7E7E82;
 }
 
 
-.main__block-one {
+
+
+
+
+
+
+
+
+
+
+
+
+.main__text-container {
+    max-width: 100%;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 5% 16px 5%;
+
+}
+
+
+.main__part1 {
+    margin: 0;
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
     
 }
-.main__about {
-    margin: 24px 16px 16px 16px;
+
+.main__part2 {
+   
+    margin: 0;
     font-family: TT Lakes;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
 }
+
+
+
+
+
+
 .main__read-more {
     display: flex;
     align-items: center;
-    margin: 0 auto 16px 16px;
+    margin: 0 auto 16px 5%;
     padding: 0;
     background: none;
     border: none;
@@ -169,11 +226,303 @@ overflow: hidden;
     margin-right: 8px;
     order: -1;
     
-}
-.main__cps-img {
-    margin-bottom: 35px;
+
 }
 
+.main__containers-block {
+    
+    padding-bottom: 35px;
+}
+
+
+
+.main__img-container {
+    display: flex;
+  
+}
+
+
+
+
+@media  (min-width: 769px)  {
+
+    .header__nav {
+        margin: 0 3.12%;  
+    }
+
+    .header__burger {    
+        margin-right: 2.8%;
+    }
+
+    .header__divider-laptop {
+        display: block;
+        margin-right: 2.8%;
+        height: 32px;
+        border-right: 2px solid #EAEAEA;
+        border-radius: 1px;
+    }
+    
+    .header__cps {
+        margin-right: 34.7%;
+    }
+
+    .header__call {
+        display: inline;
+        margin-right: 2.22%;
+    }
+    .header__chat {
+         display: inline;
+         margin-right: 2.22%;
+    }
+    .header__profile {
+         display: inline;
+         margin-right: 2.8%
+    }
+
+    .header__divider {
+         margin-right: 2.8%;
+    }
+    
+    .header__repair {
+        margin-right: 2.22%;
+    }
     
     
+    .main__highlight {
+        margin-right: 20px;
+        
+    }
     
+
+    .main__slide-container {
+        margin-left: 3.12%;
+    }
+     
+
+    .main__slide-menu {
+    margin: 0;
+   
+
+}
+
+
+
+
+
+
+
+
+ .main__containers-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 93.70%;
+    padding-bottom: 40px;
+    
+}
+
+
+ .main__flex-column-container {
+    display: flex;
+    flex-direction: column;
+    height: 194px;
+
+}
+
+
+.main__text-container {
+    width: 312px;
+    height: 160px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+
+}
+
+.main__part1 {line-height: 20px;}
+
+.main__part2 {line-height: 20px;}
+
+
+.main__read-more {margin: 0;} 
+
+.main__img-container {
+    display: flex;
+    width: 360px;
+    height: 208px;
+    
+}
+
+
+.main__cps-img-big{
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+   
+}
+
+
+
+} 
+
+ 
+    
+   
+
+
+@media  (min-width: 1120px) {
+
+
+.header__container
+{ display: none;} 
+
+
+ 
+.main__titile-container {
+    max-width: 100%;
+    margin-bottom: 8px;
+    padding-top: 42px;
+    margin-right: 2.66%;
+}
+
+.main__container-text-highlight {
+    margin: 0;
+    width: 100%;
+}
+
+.main__container-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+  
+
+} 
+
+.main__repair-figure {
+    display: flex; 
+    align-items: center;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: TT Lakes;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin: 0 9.6% 0 0;
+    }
+
+
+    .main__checkstatus-figure{
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        font-size: 16px;
+        font-family: TT Lakes;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin: 0;
+
+    }
+
+
+
+
+    .main__repair {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main__checkstatus {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+
+    .main__figcaption-repair {
+        order: -1;
+         margin-right: 9px;
+        
+    }
+    
+    .main__figcaption-checkstatus{
+        order: -1;
+        margin-right: 9px;
+        
+    }
+    
+
+
+
+
+.main__repair-link {
+    white-space: nowrap;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+
+    
+.main__checkstatus-link {
+    white-space: nowrap;
+    color: #1B1C21;
+    text-decoration: none;
+    
+}
+
+
+.main__slide-container {
+    
+    margin-right: 2.24%;
+    margin-left: 2.86%;
+    height: auto;
+    margin-bottom: 7px;
+    
+}
+
+.main__slide-menu {
+    overflow: unset;
+    flex-wrap: wrap;
+
+}
+
+.slide-menu__item {
+    padding: 8px 21px;
+    
+}
+
+
+.main__containers-block {
+    padding-bottom: 49px;
+    margin: 0 2.5% 0 3.04%;
+
+}
+
+.main__text-container {
+    min-width: 490px;
+    height: 160px;
+    padding-top: 9px;
+    margin: 0 0 14px 0;
+    overflow: visible;
+
+}
+
+
+
+
+.main__img-container {
+    display: flex;
+    width: 531px;
+    height: 307px;
+    
+}
+
+
+.main__cps-img-big{
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+   
+}
+
+}
