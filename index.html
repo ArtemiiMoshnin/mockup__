@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Mockup</title>
@@ -12,76 +12,60 @@
     <header class="header">
         <div class="header__container">
             <nav class="header__nav">
-              
-                <button type="button" class="header__burger">
-                    <img class="header__burger-img" src="images/burger.svg" alt="Меню">
+                
+                <button type="button" class="header__burger"> 
                 </button>
-                <div class="header__divider-laptop"></div>
+               
                 <a class="header__cps">
-                    <img class="header__cps-img" src="images/cps.svg" alt="Логотип">
+                    <div class="header__cps-img"></div>
                 </a>
+
+
+
                 <a href="#" class="header__call">
-                    <img class="header__call-img" src="images/call.svg" alt="Позвонить">
+                    <div class="header__call-img"></div>
                 </a>
+
                 <a href="#" class="header__chat">
-                    <img class="header__chat-img" src="images/chat.svg" alt="Чат">
+                    <div class="header__chat-img"></div>
                 </a>
+
                 <a href="#" class="header__profile">
-                    <img class="header__profile-img" src="images/profile.svg" alt="Профиль">
+                <div class="header__profile-img"></div>
                 </a>
-                <div class="header__divider"></div>
+
 
                 
                 <a href="#" class="header__repair">
-                    <img class="header__repair-img" src="images/repari.svg" alt="Оставить заявку">
+                <div class="header__repair-img"></div>
                 </a>
                
                 <a href="#" class="header__checkstatus">
-                    <img class="header__checkstatus-img" src="images/checkstatus.svg" alt="Статус ремонта">
-                </a>
-                
-
-                
+                <div class="header__checkstatus-img"></div>
+                </a> 
 
             </nav>
         </div>
     </header>
     <main class="main">
-        <div class="main__container">        
-            
+        <div class="main__container">             
             <div class="main__titile-container">
 
                 <div class="main__container-text-highlight">
-                <div class="main__highlight"></div>
                 <h1 class="main__title title">Услуги и сервисы</h1>
                 </div>
             
                 <div class="main__container-links">
-
-                <figure class="main__repair-figure">
                     <a href="#" class="main__repair">
-                        <img class="main__repair-img" src="images/repari.svg" alt="Оставить заявку">
-                    </a>
-                    <figcaption class="main__figcaption-repair">
-                        <a href="#" class="main__repair-link">Оставить заявку</a> 
-                    </figcaption>
-                    </figure>
-                    
-    
-                    <figure class="main__checkstatus-figure">
+                       Оставить заявку
+                       <div class="main__repair-img"></div>
+                    </a> 
                     <a href="#" class="main__checkstatus">
-                        <img class="main__checkstatus-img" src="images/checkstatus.svg" alt="Статус ремонта">
+                       Статус ремонта
+                       <div class="main__checkstatus-img"></div>
                     </a>
-                    <figcaption class="main__figcaption-checkstatus">
-                        <a href="#" class="main__checkstatus-link">Статус ремонта</a> 
-                    </figcaption>
-                    </figure>
-
                 </div>    
-
-
             </div> 
-
 
             <div class="main__slide-container">
                 <ul class="main__slide-menu slide-menu">
@@ -97,37 +81,34 @@
                         <a href="#" class="slide-menu__link">Специальные цены</a></li>
                         <li class="slide-menu__item">
                             <a href="#" class="slide-menu__link">Отзывы</a></li>
-                </ul>
-                </div>
+                </ul>      
+            </div>
+            
         
         
-            <div class="main__containers-block">   
-
-            <div class="main__flex-column-container">
+          <div class="main__containers-block">   
+           <div class="main__flex-column-container">
 
             <div class="main__text-container">
-            <p class="main__part1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+            <p class="main__part-one">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
                 Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
             </p>
-            <br> <!-- Я могу ведь использовать этот тег в БЭМ таким образом? -->
-            <p class="main__part2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
+            <br>
+            <p class="main__part-two">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
                 что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
                 что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
             </p>
             </div> 
+            
+            <button type="button" class="main__read-more">Читать далее </button>
 
-          
-                <button type="button" class="main__read-more"> Читать далее
-                    <img class="main__read-more-img" src="images/more.svg" alt="Читать далее">
-                </button>
-
-            </div>
+           </div>
 
             <div class="main__img-container">
-                <img class="main__cps-img-big" src="images/picture.jpg" alt="CPS">
+                <img class="main__cps-img-big" src="css/Images/Picture.jpg" alt="CPS">
             </div>  
 
-           </div>  
+          </div>  
         </div>   
     </main>
 </body>
