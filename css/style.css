@@ -83,6 +83,7 @@
 .main__container {
     max-width: 100%;
     background-color: #F8F8F8;
+    
 }
 
 
@@ -128,7 +129,7 @@
     margin-left: 5%;
     margin-bottom: 24px;
     max-width: 100%;
-    height: 40px;
+    height: 40px; 
 }
  
 
@@ -140,8 +141,8 @@
   margin: 0;
   overflow-x: scroll;
   scrollbar-width: none;
-  
 }
+
 
 
 .slide-menu__item {
@@ -149,7 +150,7 @@
     font-family: TT Lakes;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.2px;  
 }
 
 .slide-menu__item--autofocus { 
@@ -336,9 +337,6 @@
 }
      
 
-.main__slide-menu {
-    margin: 0;
-}
 
 
 
